@@ -10,7 +10,7 @@
         Planet data table mdn challenege 
         -->  
     <title>Planet data table</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
   </head>
     <body>
         <h1>Planet data table</h1>
@@ -22,16 +22,13 @@
 
             <colgroup>
                 <col span="2" />
-                <col class="column-background" />
-                <col class="column-fixed-width" />
-                <col class="column-background" />
-                <col class="column-background-border" />
-                <col span="2" class="column-fixed-width" />
+                <col class="column-border">
+                <col span="9">
             </colgroup>
 
             <thead>
                 <tr>
-                    <th colspan="2"></th>
+                    <td colspan="2"></td>
                     <th scope="col">Name</th>
                     <th scope="col">Mass (10<sup>24</sup>kg)</th>
                     <th scope="col">Diameter (km)</th>
@@ -49,8 +46,8 @@
 
             <tbody>
                 <tr>
-                    <th scope="rowgroup" rowspan="4">Terrestrial planets</th>
-                    <td></td>
+                    <th scope="rowgroup" rowspan="4" colspan="2">Terrestrial planets</th>
+
                     <th scope="row">Mercury</th> 
                     <td>0.330</td> 
                     <td>4,879</td> 
@@ -64,7 +61,7 @@
                 </tr>
 
                 <tr>
-                    <td></td>
+                    
                     <th scope="row">Venus</th> 
                     <td>4.87</td>
                     <td>12,104</td>
@@ -78,7 +75,7 @@
                 </tr>
 
                 <tr>
-                    <td></td>
+                    
                     <th scope="row">Earth</th> 
                     <td>5.97</td>
                     <td>12,756</td>
@@ -92,7 +89,7 @@
                 </tr>
 
                 <tr>
-                    <td></td>
+                    
                     <th scope="row">Mars</th>
                     <td>0.642</td>
                     <td>6,792</td>
@@ -164,9 +161,7 @@
                 </tr>
 
                 <tr>
-                    <th scope="rowgroup">Dwarf planets</th>
-                    <td></td>
-
+                    <th scope="rowgroup" colspan="2">Dwarf planets</th>
                     <th scope="row">Pluto</th> 
                     <td>0.0146</td> 
                     <td>2,370 </td>
