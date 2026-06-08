@@ -6,9 +6,16 @@ body {
   font: 1.2em / 1.5 system-ui;
   padding: 20px;
   width: 500px;
-  background-color:#efefef;
+  background-color: #efefef;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
+}
+
+ul {
+    background-color: white;
+    border: purple;
+    padding: 30px;
+    border: 20px;
 }
