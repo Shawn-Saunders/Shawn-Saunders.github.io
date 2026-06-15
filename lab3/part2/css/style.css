@@ -1,5 +1,8 @@
 /* General setup */
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -9,7 +12,12 @@ body {
   padding: 0 20px;
   min-width: 980px;
   max-width: 1400px;
+  font-family: 'Noto Serif';
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  /*font-size: 12pt; DEFAULT SIZE */
 }
+
 
 /* Layout */
 
@@ -20,7 +28,27 @@ main {
   padding: 20px 0;
 }
 
+section {
+  text-indent: 2rem;
+}
+
 /* header and footer */
+
+h1,
+h2 {
+    font-family: 'Noto Sans';
+    letter-spacing: 0.06em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+}
 
 header {
   border-bottom: 5px solid #aa6666;
