@@ -29,7 +29,9 @@ main {
 }
 
 section {
-  text-indent: 2rem;
+  h2, p {
+    text-indent: 2rem;
+  }
 }
 
 a[href^='http']::after {
@@ -41,6 +43,8 @@ a[href^='http']::after {
 
   background-size: 100%;
   background-image: url("../images/icons8-external-link-26.png");
+  background-repeat: no-repeat;
+  vertical-align: middle;
 }
 
 /* nav */
@@ -48,6 +52,7 @@ a[href^='http']::after {
 
 a {
   color:#aa6666;
+  text-decoration: underline;
 }
 
 
@@ -72,6 +77,7 @@ nav {
     text-transform: uppercase;
     
     a{
+      
       display: block;
       padding: 18px;
       text-decoration: none;
@@ -80,6 +86,10 @@ nav {
 
     a:hover{
       color: #d1a924;
+    }
+
+    a:focus {
+      color: #aa6666;
     }
   }
   li:hover{
@@ -90,7 +100,11 @@ nav {
   }
 }
 
+/* ol and ul */
 
+ul, ol {
+  
+}
 
 /* header and footer */
 
