@@ -1,6 +1,5 @@
 /* General setup */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif&display=swap');
 
 * {
@@ -65,6 +64,9 @@ a:visited {
   color:#982323;
 }
 
+/* Validator checked but W3C CSS checker checks for level 3 CSS, which does not support nested CSS. 
+    according to our MDN resourses this structure should be valid */
+
 nav {
   li{
     list-style-type: none;
@@ -90,15 +92,17 @@ nav {
       color: #d1a924;
     }
 
-    a:focus {
+    a:focus, a:visited {
       color: #aa6666;
     }
+
+    
   }
   li:hover{
   background: #aa6666;
-  a{
-    color: #d1a924;
-  }
+    a{
+      color: #d1a924;
+    }
   }
 }
 
@@ -107,7 +111,7 @@ nav {
 ul, ol {
   margin-top: auto;
   margin-bottom: auto;
-  line-height: 2rem;
+  line-height: 1.5;
   list-style-type: circle;
 }
 
