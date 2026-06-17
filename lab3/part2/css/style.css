@@ -28,10 +28,8 @@ main {
   padding: 20px 0;
 }
 
-section {
-  h2, p {
-    text-indent: 2rem;
-  }
+section h2 + p {
+  text-indent: 2rem;
 }
 
 a[href^='http']::after {
@@ -61,6 +59,10 @@ a:focus {
   color:#982323;
   text-decoration: none;
   outline: none;
+}
+
+a:visited {
+  color:#982323;
 }
 
 nav {
@@ -103,7 +105,10 @@ nav {
 /* ol and ul */
 
 ul, ol {
-  
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 2rem;
+  list-style-type: circle;
 }
 
 /* header and footer */
@@ -117,11 +122,13 @@ h2 {
 h1 {
   font-size: 2.5rem;
   text-align: center;
+  font-weight: 900;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 0px;
+  font-weight: 900;
 }
 
 header {
