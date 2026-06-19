@@ -54,6 +54,10 @@ nav a {
 }
 
 .photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1px;
+  row-gap: 1px;
   list-style: none;
   margin: 0;
   padding: 0;
