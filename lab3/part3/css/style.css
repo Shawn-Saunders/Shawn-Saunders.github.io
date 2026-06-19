@@ -25,6 +25,9 @@ img {
 }
 
 .grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 20px;
   margin: 0 auto;
   max-width: 980px;
 }
@@ -32,6 +35,8 @@ img {
 nav {
   background-color: black;
   padding: 0.5em;
+  position: sticky;
+  top: 0;
 }
 
 nav ul {
