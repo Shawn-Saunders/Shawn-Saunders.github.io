@@ -39,16 +39,28 @@ function returnRandomStoryString() {
 generateBtn.addEventListener("click", generateStory);
 
 function generateStory() {
+
+  // create a new story
+  let newStory = returnRandomStoryString();
+
   if (customName.value !== "") {
     const name = customName.value;
+
+    // replace Bob with the custom name
+    newStory = newStory.replace("Bob", name);
   }
 
   if (document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature = Math.round(94);
+    // convert pounds to stones and F to C
+    const weight = Math.round(300 / 14) + " stone";
+    const temperature = Math.round((94 - 32) * 5 / 9) + " Celsius";
+
+    // replace American values with UK values
+    newStory = newStory.replace("300 pounds", weight);
+    newStory = newStory.replace("94 Fahrenheit", temperature);
   }
 
   // TODO: replace "" with the correct expression
-  story.textContent = "";
+  story.textContent = newStory;
   story.style.visibility = "visible";
 }
