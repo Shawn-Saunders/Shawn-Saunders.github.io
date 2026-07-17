@@ -9,3 +9,45 @@ const thumbBar = document.querySelector(".thumb-bar");
 
 const btn = document.querySelector("button");
 const overlay = document.querySelector(".overlay");
+
+// create image objects
+const images = [
+    {
+        filename: "eye.jpg",
+        alt: "Closeup of a human eye"
+    },{
+        filename: "rock.jpg",
+        alt: "Rock that looks like a wave"
+    },{
+        filename: "flower.jpg",
+        alt: "Purple and white pansies"
+    },{
+        filename: "egypt.jpg",
+        alt: "Section of wall from a pharaoh's tomb"
+    },{
+        filename: "moth.jpg",
+        alt: "Large moth on a leaf"
+    }
+]
+
+// create baseURL
+const baseURL = "./images/";
+
+// create each image and display them
+
+for (const image of images) {
+    // create img element
+    const newImage = document.createElement("img");
+
+    // conat the src path for the object
+    newImage.src = `${baseURL}${image.filename}`;
+
+    // give each object the alt text
+    newImage.alt = image.alt;
+
+    // let the element be accessed with "tab"
+    newImage.tabIndex = "0";
+
+    // append the image to thumbBar
+    thumbBar.appendChild(newImage);
+}
