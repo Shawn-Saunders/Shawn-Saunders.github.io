@@ -53,12 +53,19 @@ for (const image of images) {
 
     // click listener
     newImage.addEventListener("click", updateDisplayedImage)
+
+    // key listener
+    newImage.addEventListener("keydown", function(event){
+        if (event.code === "Enter") {
+            updateDisplayedImage(event)
+        }
+    });
 }
 
 // display the pictures when clicked
-function updateDisplayedImage(image){
-    displayedImage.src = image.target.src;
-    displayedImage.alt = image.target.src;
+function updateDisplayedImage(event){
+    displayedImage.src = event.target.src;
+    displayedImage.alt = event.target.alt;
 }
 
 btn.addEventListener("click", function() {
