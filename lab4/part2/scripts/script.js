@@ -50,4 +50,14 @@ for (const image of images) {
 
     // append the image to thumbBar
     thumbBar.appendChild(newImage);
+
+    // click listener
+    newImage.addEventListener("click", updateDisplayedImage)
 }
+
+// display the pictures when clicked
+function updateDisplayedImage(image){
+    displayedImage.src = image.target.src;
+    displayedImage.alt = image.target.src;
+}
+
