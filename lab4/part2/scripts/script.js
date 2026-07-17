@@ -61,3 +61,18 @@ function updateDisplayedImage(image){
     displayedImage.alt = image.target.src;
 }
 
+btn.addEventListener("click", function() {
+    // get the class name of the button
+    const currentClass = btn.getAttribute('class');
+
+    // check if the button is dark, if not assume it's light
+    if (currentClass === "dark"){
+        btn.textContent = "Lighten";
+        overlay.style.backgroundColor = 'rgb(0 0 0 / 0.5)';
+        btn.classList.toggle("dark");
+    } else {
+        btn.textContent = "Darken";
+        overlay.style.backgroundColor = 'rgb(0 0 0 / 0)';
+        btn.classList.toggle("dark");
+    }
+});
