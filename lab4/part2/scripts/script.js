@@ -76,10 +76,9 @@ btn.addEventListener("click", function() {
     if (currentClass === "dark"){
         btn.textContent = "Lighten";
         overlay.style.backgroundColor = 'rgb(0 0 0 / 0.5)';
-        btn.classList.toggle("dark");
     } else {
         btn.textContent = "Darken";
         overlay.style.backgroundColor = 'rgb(0 0 0 / 0)';
-        btn.classList.toggle("dark");
     }
+    btn.classList.toggle("dark");
 });
