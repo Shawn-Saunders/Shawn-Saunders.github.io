@@ -191,6 +191,8 @@ const evilCircle = new EvilCircle(
   10
 );
 
+para.textContent = "Ball Count: " + ballCount;
+
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
   ctx.fillRect(0, 0, width, height);
