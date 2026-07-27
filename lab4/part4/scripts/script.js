@@ -10,8 +10,12 @@
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
+const para = document.querySelector("#ballCount");
+
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
+
+let ballCount = 0;
 
 // function to generate random number
 
@@ -150,6 +154,8 @@ class EvilCircle extends Shape {
 
         if (distance < this.size + ball.size) {
           ball.exists = false;
+          ballCount--;
+          para.textContent = "Ball Count: " + ballCount;
         }
       }
     }
@@ -160,6 +166,7 @@ class EvilCircle extends Shape {
 const balls = [];
 
 while (balls.length < 25) {
+  ballCount++;
   const size = random(10, 20);
   const ball = new Ball(
     // ball position always drawn at least one ball width
