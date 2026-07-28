@@ -9,7 +9,7 @@
         Challenge: Structuring a feedback form
         -->
         <title>Forms challenge</title>
-        <link href="./css/style.css" rel="stylesheet" />
+        <link href="./css/style.css" rel="stylesheet">
         <script defer src="./scripts/script.js"></script>
     </head>
     <body>
@@ -25,66 +25,102 @@
 
         <img src="https://mdn.github.io/shared-assets/images/examples/learn/woodland-strip.jpg" alt="">
 
-        <Form action="#" method="get">
+        <Form action="#" method="POST">
             <h2>Facilities</h2>
 
-            <div>
+            
+            <fieldset>
                 <legend>Was the porridge</legend>
-                <input type="radio" name="temp" id="hot" value="hot" checked>
-                <label for="hot">Too hot?</label>
-                <input type="radio" name="temp" id="cold" value="cold">
-                <label for="cold">Too cold?</label>
-                <input type="radio" name="temp" id="rightPorridge" value="right">
-                <label for="rightPorridge">Just right?</label>
-            </div>
 
-            <div>
+                <div class="seperator">
+                    <input type="radio" name="temp" id="hot" value="hot" checked>
+                    <label for="hot">Too hot?</label>
+                </div>
+
+                <div class="seperator">
+                    <input type="radio" name="temp" id="cold" value="cold">
+                    <label for="cold">Too cold?</label>
+                </div>
+
+                <div class="seperator">
+                    <input type="radio" name="temp" id="rightPorridge" value="right">
+                    <label for="rightPorridge">Just right?</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
                 <legend>Were the beds</legend>
-                <input type="radio" name="bed" id="hard" value="hard" checked>
-                <label for="hard">Too hard?</label>
-                <input type="radio" name="bed" id="soft" value="soft">
-                <label for="soft">Too soft?</label>
-                <input type="radio" name="bed" id="rightBed" value="right">
-                <label for="rightBed">Just right?</label>
-            </div>
 
-            <div>
+                <div class="seperator">
+                    <input type="radio" name="bed" id="hard" value="hard" checked>
+                    <label for="hard">Too hard?</label>
+                </div>
+
+                <div class="seperator">
+                    <input type="radio" name="bed" id="soft" value="soft">
+                    <label for="soft">Too soft?</label>
+                </div>
+
+                <div class="seperator">
+                    <input type="radio" name="bed" id="rightBed" value="right">
+                    <label for="rightBed">Just right?</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
                 <legend>Describe the chairs (select all you agree with)</legend>
-                <input type="checkbox" name="chair" id="comfy" value="comfy">
-                <label for="comfy">Comfy</label>
-                <input type="checkbox" name="chair" id="Luxurious" value="Luxurious">
-                <label for="Luxurious">Luxurious</label>
-                <input type="checkbox" name="chair" id="tech" value="HiTech">
-                <label for="tech">Hi-tech</label>
-                <input type="checkbox" name="chair" id="Pretty" value="Pretty">
-                <label for="Pretty">Pretty</label>
-                <input type="checkbox" name="chair" id="Majestic" value="Majestic">
-                <label for="Majestic">Majestic</label>
-            </div>
+
+                <div class="seperator">
+                    <input type="checkbox" name="chair" id="comfy" value="comfy">
+                    <label for="comfy">Comfy</label>
+                </div>
+
+                <div class="seperator">
+                    <input type="checkbox" name="chair" id="Luxurious" value="Luxurious">
+                    <label for="Luxurious">Luxurious</label>
+                </div>
+
+                <div class="seperator">
+                    <input type="checkbox" name="chair" id="tech" value="HiTech">
+                    <label for="tech">Hi-tech</label>
+                </div>
+
+                <div class="seperator">
+                    <input type="checkbox" name="chair" id="Pretty" value="Pretty">
+                    <label for="Pretty">Pretty</label>
+                </div>
+
+                <div class="seperator">
+                    <input type="checkbox" name="chair" id="Majestic" value="Majestic">
+                    <label for="Majestic">Majestic</label>
+                </div>
+            </fieldset>
 
             <!---->
 
             <h2>About your hosts</h2>
 
-            <div>
+            <fieldset>
                 <legend>Who's your favorite bear?</legend>
+
                 <select name="favoriteBear" id="favoriteBear">
                     <option value="papa">Papa bear</option>
                     <option value="mama">Mama bear</option>
                     <option value="junior">Junior</option>
                     <option value="dozer">Dozer</option>
                 </select>
-            </div>
+            </fieldset>
 
-            <div>
+            <fieldset>
                 <legend>Which greeting did you prefer?</legend>
+
                 <select name="greeting" id="greeting">
                     <option value="wave">Wave</option>
                     <option value="friendly">Friendly greeting</option>
                     <option value="growl">Growl</option>
                     <option value="claw">Claw marks in the door</option>
                 </select>
-            </div>
+            </fieldset>
 
             <!---->
 
@@ -100,12 +136,23 @@
             <h2>Your details</h2>
 
             <div>
-                <label for="name" id="name">Name</label>
-                <input type="text" name="name" id="name" required>
-                <label for="email" id="email">Email</label>
-                <input type="text" name="email" id="email" required>
-                <label for="phone" id="phone">Phone</label>
-                <input type="text" name="phone" id="phone" required>
+                <div class="seperator">
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" name="name" id="name" required>
+                </div>
+
+                <div class="seperator">
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="text" name="email" id="email" required>
+                </div>
+
+                <div class="seperator">
+                    <label for="phone">Phone</label>
+                    <br>
+                    <input type="text" name="phone" id="phone" required>
+                </div>
             </div>
 
             <!---->
