@@ -58,6 +58,12 @@ p, li, table {
 
 /* || header layout */
 
+header {
+  background-color: #455090;
+  padding: 1% 0;
+  margin-bottom: 10px;
+}
+
 nav, article, footer, .secondary {
   background-color: white;
 }
