@@ -1,3 +1,10 @@
+/*
+Name: Shawn Saunders
+File: main.js
+Date: 05 August 2026
+JavaScript file for Accessibility Troubleshooting assignment
+*/
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
