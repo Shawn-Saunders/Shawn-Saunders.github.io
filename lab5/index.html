@@ -36,7 +36,7 @@ about accessibility in HTML
 
       <form class="search">
         <input type="search" name="q" placeholder="Search query" aria-label="Search query">
-        <input type="submit" value="Go!">
+        <button type="submit">Go!</button>
       </form>
     </nav>
 
@@ -139,10 +139,16 @@ about accessibility in HTML
           </p>
           
           <audio controls>
-            <source src="media/bear.mp3" type="audio/mp3">
+            <source src="media/bear.mp3" type="audio/mpeg">
             <source src="media/bear.ogg" type="audio/ogg">
-            <p>It looks like your browser doesn't support HTML5 audio players.</p>
+            <p>It looks like your browser doesn't support HTML5 audio. You can download the
+              <a href="media/bear.mp3">mp3 audio file</a> or <a href="media/bear.ogg"> ogg audio file</a> instead.</p>
           </audio>
+
+          <details>
+            <summary>Audio transcription</summary>
+            <p>This isn't really an audio fact file about bears. But it is, an audio file you can transcribe.</p>
+          </details>
 
         <aside>
 
@@ -157,7 +163,7 @@ about accessibility in HTML
 
         </aside>
         <section class="comments">
-          <button class="show-hide">Show comments</button>
+          <button class="show-hide" type="button">Show comments</button>
 
           <div class="comment-wrapper">
 
@@ -166,14 +172,14 @@ about accessibility in HTML
             <form class="comment-form">
               <div class="flex-pair">
                 <label for="name">Your name:</label>
-                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <input type="text" name="name" id="name" placeholder="Enter your name" aria-label="Your name">
               </div>
               <div class="flex-pair">
                 <label for="comment">Your comment:</label>
-                <input type="text" name="comment" id="comment" placeholder="Enter your comment">
+                <input type="text" name="comment" id="comment" placeholder="Enter your comment" aria-label="Your comment">
               </div>
               <div>
-                <input type="submit" value="Submit comment">
+                <button type="submit">Submit Comment</button>
               </div>
             </form>
 

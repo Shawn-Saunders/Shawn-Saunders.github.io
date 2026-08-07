@@ -23,6 +23,10 @@ body {
   margin: 0 auto;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* || typography */
 
 h1, h2, h3 {
@@ -30,7 +34,7 @@ h1, h2, h3 {
   color: #2a2a2a;
 }
 
-p, input, li, table, label {
+p, input, button, li, table, label {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #2a2a2a;
 }
@@ -112,7 +116,8 @@ nav .search {
   padding: 0 2em;
 }
 
-.search input {
+.search input,
+.search button {
   font-size: 1.6rem;
   height: 32px;
 }
@@ -121,7 +126,7 @@ nav .search {
   flex: 3;
 }
 
-.search input[type="submit"] {
+.search button[type="submit"] {
   flex: 1;
   margin-left: 1rem;
   background: #333;
@@ -189,10 +194,6 @@ audio {
   padding: 10px;
 }
 
-.show-hide {
-  cursor: pointer;
-}
-
 .comments h2 {
   font-size: 2rem;
 }
@@ -226,18 +227,21 @@ audio {
   width: 150px;
 }
 
-.comment-form input, .comment-form label, .show-hide {
+.comment-form input,
+.comment-form button,
+.comment-form label,
+.show-hide {
   font-size: 1.6rem;
   line-height: 32px;
 }
 
-.comment-form input[type="submit"], .show-hide {
+.comment-form button[type="submit"], .show-hide {
   background: #333;
   border: 0;
   color: white;
 }
 
-.comment-form input[type="submit"] {
+.comment-form button[type="submit"] {
   width: 30%;
   display: block;
   margin: 0 auto;
