@@ -1,10 +1,10 @@
-# Intro to Web Development
+# Intro to Web Development Coursework
 
-# Overview
+## Overview
 
 A collection of lab work for Intro to Web Development based on MDN challenges
 
-# Challenges
+## Challenges
 
 - Lab 1: Marking up a letter & Structuring a page of content 
 - Lab 2: Creepy crawly splash page & Structuring planet data
